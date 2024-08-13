@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
         UserService userDao = new UserServiceImpl();
-        userDao.dropUsersTable();
-        userDao.createUsersTable();
+        userDao.saveUser("name", "lastN", (byte) 20);
+
 
     }
 }

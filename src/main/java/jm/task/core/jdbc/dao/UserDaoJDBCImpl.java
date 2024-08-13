@@ -3,7 +3,6 @@ package jm.task.core.jdbc.dao;
 import java.sql.*;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +12,6 @@ private static Connection con;
     static {
         try {
             con = Util.getConnection();
-
         } catch (SQLException e){
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
